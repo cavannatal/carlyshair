@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import CarlyPhoto from "../images/content/carly_full.jpg";
 import BookAppBtn from './BookAppBtn';
+import InstaGHeader from "./InstaGHeader";
 
 
 
@@ -21,7 +22,10 @@ const HomeScreen = () => {
                     Come Visit Me at Hair & Co in Fayetteville, Arkansas for an array of stunning blonde, seamlessly blended, and gorgeous hairstyles! I specialize in turning your hair aspirations into reality!</p>
                     <div>
                         {/* Insert Custom Component Right here for Contact Button to scroll down*/}
-                        <BookAppBtn/>
+                        <div className='flex  items-center gap-4'>
+                            <BookAppBtn/>
+                            <InstaGHeader/>
+                        </div>
                        
                     </div>
                 </div>

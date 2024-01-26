@@ -45,7 +45,7 @@ const categories = [
 
 const Pricing = () => {
     return (
-        <div className="md:px-5 p-4 pt-16 pb-32 max-w-screen-2xl mx-auto">
+        <div className="md:px-5 p-4 pt-2 pb-16 max-w-screen-2xl mx-auto">
             <div className='flex flex-col items-center justify-center'>
                 <h2 className='pt-5 pb-2 text-7xl font-bold text-custom-darkpurple'>
                     Pricing

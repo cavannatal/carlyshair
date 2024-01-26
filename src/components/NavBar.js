@@ -27,7 +27,7 @@ const NavBar = () => {
     }, []);
 
     return (
-        <header className='bg-white sticky shadow-md w-full fixed top-0 left-0 mb-10 z-50'> {/* Added z-50 */}
+        <header className='bg-white sticky shadow-md w-full  top-0 left-0 mb-10 z-50'> {/* Added z-50 */}
             <div className='md:px-3 py-6 px-4 md:flex justify-between items-center
             bg-white'>
                 <div className='flex text-2xl cursor-pointer items-center gap-2 ml-4'>
@@ -43,8 +43,8 @@ const NavBar = () => {
                 
                 {/* Nav Links add drop down Animation if you want*/}
                 <ul className={`md:flex md:items-center md:pb-0 pb-4 absolute md:static 
-                bg-white md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-9 
-                translate-all ${isOpen && windowWidth < 768? 'top-12 shadow-md ': 'top-[-490px]'}
+                bg-white md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-16 
+                translate-all ${isOpen && windowWidth < 768? 'top-20 shadow-md md:w-auto  ': 'top-[-490px]'}
                 `}>
                     {
                         Links.map(link => (
