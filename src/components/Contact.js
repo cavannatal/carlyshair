@@ -6,7 +6,7 @@ const Contact = () => {
         <div className='bg-pink-orange-gradient rounded-xl rounded-br-[80px] md:p-9 px-4 py-9'>
             <div className='flex flex-col md:flex-row-reverse justify-between items center gap-10'>\
             <div>
-                <h1 className='text-white'>Need to Contact Me? No Problem!</h1>
+                <h1 className='text-white'>Have a Hairtastic Day!</h1>
                 </div>
             </div>
         </div>

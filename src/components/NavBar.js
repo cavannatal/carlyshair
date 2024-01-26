@@ -10,8 +10,7 @@ import App from "../App";
 
 const NavBar = () => {
     let Links=[
-        {name:'Gallery',link:'/'},
-        {name:'Contact',link:'/'},
+        
     ]
 
     let [isOpen, setisOpen] = useState(false);

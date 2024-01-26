@@ -4,6 +4,7 @@ import HomeScreen from './components/HomeScreen';
 import Gallery from './components/Gallery';
 import Contact from './components/Contact';
 import Pricing from './components/Pricing';
+import ContactForm from './components/ContactForm';
 
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
       <HomeScreen/>
       <Gallery/>
       <Pricing/>
+      <ContactForm/>
       <Contact/>
     </div>
   );

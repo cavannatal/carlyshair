@@ -1,14 +1,10 @@
-import React, { useState, useEffect } from 'react';
-import left_arrow from '../images/content/left-arrow.png';
-import right_arrow from '../images/content/right-arrow.png';
-import image1 from '../images/content/galleryimages/image1.jpg';
-import image2 from '../images/content/galleryimages/image2.JPG';
-import image3 from '../images/content/galleryimages/image3.JPG';
-import image4 from '../images/content/galleryimages/image4.jpg';
-import image5 from '../images/content/galleryimages/image5.jpg';
-import image6 from '../images/content/galleryimages/image6.JPG';
-import image7 from '../images/content/galleryimages/image7.jpg';
-
+import React from 'react';
+import image1 from '../images/content/NewGal/a1.JPG';
+import image2 from '../images/content/NewGal/a2.JPG';
+import image3 from '../images/content/NewGal/a3.jpg';
+import image4 from '../images/content/NewGal/a4.jpg';
+import image5 from '../images/content/NewGal/a5.jpg';
+import image7 from '../images/content/NewGal/a6.jpg';
 
 const slides = [
     image1,
@@ -16,33 +12,16 @@ const slides = [
     image3,
     image4,
     image5,
-    image6,
     image7,
-]
+];
 
-export default function GalleryCarousel() {
-    const [currentSlide, setCurrentSlide] = useState(0);
-
-    useEffect(() => {
-        const timer = setInterval(() => {
-            setCurrentSlide(prevSlide => (prevSlide + 1) % slides.length);
-        }, 3000); // Change slides every 3000 milliseconds (3 seconds)
-
-        return () => clearInterval(timer); // Clear the interval on component unmount
-    }, []);
-
+export default function GalleryGrid() {
     return (
-        <div className='object-contain max-w-[600px] h-[900px] w-full m-auto py-16 px-4 relative'>
-            <div style={{backgroundImage: `url(${slides[currentSlide]})`}} className='w-full h-full rounded-2xl bg-center bg-cover duration-500'>
-                {/* Optional: Place navigation buttons or indicators here */}
-            </div>
-            {/* Left Arrow*/}
-            <div>
-            
-            </div>
-            {/* Right Arrow*/}
-            <div>
-
+        <div className='max-w-[800px] m-auto py-16 px-4'>
+            <div className='grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-3'>
+                {slides.map((slide, index) => (
+                    <div key={index} className='w-full h-96 rounded-xl bg-cover bg-center duration-500' style={{ backgroundImage: `url(${slide})` }}></div>
+                ))}
             </div>
         </div>
     );
