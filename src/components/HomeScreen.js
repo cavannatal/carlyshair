@@ -22,7 +22,7 @@ const HomeScreen = () => {
                     Come Visit Me at Hair & Co in Fayetteville, Arkansas for an array of stunning blonde, seamlessly blended, and gorgeous hairstyles! I specialize in turning your hair aspirations into reality!</p>
                     <div>
                         {/* Insert Custom Component Right here for Contact Button to scroll down*/}
-                        <div className='flex  items-center gap-4'>
+                        <div className='flex items-center '>
                             <BookAppBtn/>
                             <InstaGHeader/>
                         </div>

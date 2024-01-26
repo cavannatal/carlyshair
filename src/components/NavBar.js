@@ -52,8 +52,11 @@ const NavBar = () => {
                             <a href='/'>{link.name}</a>
                         </li>))
                     }
+                    <div className='flex  items-center gap-4'>
                     <InstagramBtn/>
                     <AppBtn/>
+                    </div>
+                    
                 </ul>
             </div>
         </header>
